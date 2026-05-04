@@ -1,5 +1,9 @@
 **/.ipynb_checkpoints/
 
+# Ignore anything with "Image" in the name
+*Image*
+**/*Image*
+
 # macOS
 .DS_Store
 **/.DS_Store
