@@ -1,5 +1,8 @@
 **/.ipynb_checkpoints/
 
+# Local datasets, trained models, images, and other notebook artifacts
+local_assets/
+
 # Ignore anything with "Image" in the name
 *Image*
 **/*Image*
