@@ -3,6 +3,13 @@
 # Local datasets, trained models, images, and other notebook artifacts
 local_assets/
 
+# Final project generated data, models, and outputs
+final_project/data/
+final_project/models/
+final_project/outputs/
+final_project/_backups/
+final_project/.cache/
+
 # Ignore anything with "Image" in the name
 *Image*
 **/*Image*
