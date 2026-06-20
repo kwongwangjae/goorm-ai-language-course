@@ -9,6 +9,11 @@ final_project/models/
 final_project/outputs/
 final_project/_backups/
 final_project/.cache/
+final_project/*.executed.ipynb
+
+# Python caches
+__pycache__/
+*.py[cod]
 
 # Ignore anything with "Image" in the name
 *Image*

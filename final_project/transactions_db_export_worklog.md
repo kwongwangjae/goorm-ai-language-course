@@ -1,0 +1,142 @@
+# transactions.csv DB export worklog
+
+- 실행 시작: 2026-06-17T19:23:55.423685+00:00
+- 실행 종료: 2026-06-17T19:41:38.813658+00:00
+- run_id: `20260618042355`
+- DB: `home_search@172.19.0.2/32:5432`
+- read-only: `on`
+
+## Chunk export
+- 2017-01-01..2017-02-01 `month` rows=29085 seconds=5.629
+- 2017-02-01..2017-03-01 `month` rows=40590 seconds=10.542
+- 2017-03-01..2017-04-01 `month` rows=49557 seconds=8.437
+- 2017-04-01..2017-05-01 `month` rows=45803 seconds=8.08
+- 2017-05-01..2017-06-01 `month` rows=57081 seconds=8.531
+- 2017-06-01..2017-07-01 `month` rows=60236 seconds=9.13
+- 2017-07-01..2017-08-01 `month` rows=59742 seconds=9.189
+- 2017-08-01..2017-09-01 `month` rows=43015 seconds=7.319
+- 2017-09-01..2017-10-01 `month` rows=45058 seconds=7.63
+- 2017-10-01..2017-11-01 `month` rows=38144 seconds=4.918
+- 2017-11-01..2017-12-01 `month` rows=41943 seconds=7.216
+- 2017-12-01..2018-01-01 `month` rows=38568 seconds=5.158
+- 2018-01-01..2018-02-01 `month` rows=49327 seconds=8.243
+- 2018-02-01..2018-03-01 `month` rows=42037 seconds=7.187
+- 2018-03-01..2018-04-01 `month` rows=53304 seconds=8.1
+- 2018-04-01..2018-05-01 `month` rows=34533 seconds=4.685
+- 2018-05-01..2018-06-01 `month` rows=35280 seconds=4.609
+- 2018-06-01..2018-07-01 `month` rows=35109 seconds=4.899
+- 2018-07-01..2018-08-01 `month` rows=35057 seconds=4.651
+- 2018-08-01..2018-09-01 `month` rows=54620 seconds=8.453
+- 2018-09-01..2018-10-01 `month` rows=48520 seconds=7.659
+- 2018-10-01..2018-11-01 `month` rows=42686 seconds=7.422
+- 2018-11-01..2018-12-01 `month` rows=29307 seconds=4.183
+- 2018-12-01..2019-01-01 `month` rows=25502 seconds=3.778
+- 2019-01-01..2019-02-01 `month` rows=27119 seconds=4.853
+- 2019-02-01..2019-03-01 `month` rows=25361 seconds=3.649
+- 2019-03-01..2019-04-01 `month` rows=32044 seconds=4.46
+- 2019-04-01..2019-05-01 `month` rows=31409 seconds=4.714
+- 2019-05-01..2019-06-01 `month` rows=33755 seconds=4.627
+- 2019-06-01..2019-07-01 `month` rows=37229 seconds=5.009
+- 2019-07-01..2019-08-01 `month` rows=43794 seconds=8.581
+- 2019-08-01..2019-09-01 `month` rows=40557 seconds=7.605
+- 2019-09-01..2019-10-01 `month` rows=42615 seconds=7.688
+- 2019-10-01..2019-11-01 `month` rows=62518 seconds=10.013
+- 2019-11-01..2019-12-01 `month` rows=70998 seconds=9.78
+- 2019-12-01..2020-01-01 `month` rows=65150 seconds=9.18
+- 2020-01-01..2020-02-01 `month` rows=55040 seconds=11.465
+- 2020-02-01..2020-03-01 `month` rows=77786 seconds=10.987
+- 2020-03-01..2020-04-01 `month` rows=48048 seconds=8.191
+- 2020-04-01..2020-05-01 `month` rows=42250 seconds=7.616
+- 2020-05-01..2020-06-01 `month` rows=57995 seconds=8.921
+- 2020-06-01..2020-07-01 `month` rows=100164 seconds=13.711
+- 2020-07-01..2020-08-01 `month` rows=70602 seconds=10.399
+- 2020-08-01..2020-09-01 `month` rows=47729 seconds=8.022
+- 2020-09-01..2020-10-01 `month` rows=48878 seconds=8.599
+- 2020-10-01..2020-11-01 `month` rows=65005 seconds=9.808
+- 2020-11-01..2020-12-01 `month` rows=86488 seconds=12.884
+- 2020-12-01..2021-01-01 `month` rows=79277 seconds=12.762
+- 2021-01-01..2021-02-01 `month` rows=57317 seconds=10.302
+- 2021-02-01..2021-03-01 `month` rows=48314 seconds=8.117
+- 2021-03-01..2021-04-01 `month` rows=57268 seconds=9.278
+- 2021-04-01..2021-05-01 `month` rows=50309 seconds=8.202
+- 2021-05-01..2021-06-01 `month` rows=54678 seconds=8.361
+- 2021-06-01..2021-07-01 `month` rows=49079 seconds=8.321
+- 2021-07-01..2021-08-01 `month` rows=52722 seconds=8.83
+- 2021-08-01..2021-09-01 `month` rows=51634 seconds=8.639
+- 2021-09-01..2021-10-01 `month` rows=41319 seconds=5.002
+- 2021-10-01..2021-11-01 `month` rows=40011 seconds=5.519
+- 2021-11-01..2021-12-01 `month` rows=27718 seconds=4.335
+- 2021-12-01..2022-01-01 `month` rows=23534 seconds=3.541
+- 2022-01-01..2022-02-01 `month` rows=20939 seconds=4.09
+- 2022-02-01..2022-03-01 `month` rows=22739 seconds=3.805
+- 2022-03-01..2022-04-01 `month` rows=29474 seconds=4.23
+- 2022-04-01..2022-05-01 `month` rows=32896 seconds=4.473
+- 2022-05-01..2022-06-01 `month` rows=29622 seconds=3.877
+- 2022-06-01..2022-07-01 `month` rows=21661 seconds=3.51
+- 2022-07-01..2022-08-01 `month` rows=16991 seconds=3.165
+- 2022-08-01..2022-09-01 `month` rows=16247 seconds=3.066
+- 2022-09-01..2022-10-01 `month` rows=15097 seconds=3.161
+- 2022-10-01..2022-11-01 `month` rows=15764 seconds=2.885
+- 2022-11-01..2022-12-01 `month` rows=14458 seconds=2.71
+- 2022-12-01..2023-01-01 `month` rows=14037 seconds=2.859
+- 2023-01-01..2023-02-01 `month` rows=18223 seconds=4.855
+- 2023-02-01..2023-03-01 `month` rows=30120 seconds=4.316
+- 2023-03-01..2023-04-01 `month` rows=33215 seconds=4.702
+- 2023-04-01..2023-05-01 `month` rows=32243 seconds=4.458
+- 2023-05-01..2023-06-01 `month` rows=35348 seconds=4.831
+- 2023-06-01..2023-07-01 `month` rows=34153 seconds=4.61
+- 2023-07-01..2023-08-01 `month` rows=33066 seconds=4.463
+- 2023-08-01..2023-09-01 `month` rows=35208 seconds=4.746
+- 2023-09-01..2023-10-01 `month` rows=32587 seconds=4.581
+- 2023-10-01..2023-11-01 `month` rows=30130 seconds=4.386
+- 2023-11-01..2023-12-01 `month` rows=25607 seconds=4.249
+- 2023-12-01..2024-01-01 `month` rows=23218 seconds=3.488
+- 2024-01-01..2024-02-01 `month` rows=30388 seconds=5.377
+- 2024-02-01..2024-03-01 `month` rows=29377 seconds=4.115
+- 2024-03-01..2024-04-01 `month` rows=38844 seconds=5.359
+- 2024-04-01..2024-05-01 `month` rows=36596 seconds=5.368
+- 2024-05-01..2024-06-01 `month` rows=38196 seconds=5.334
+- 2024-06-01..2024-07-01 `month` rows=42378 seconds=9.515
+- 2024-07-01..2024-08-01 `month` rows=46686 seconds=8.409
+- 2024-08-01..2024-09-01 `month` rows=41337 seconds=5.742
+- 2024-09-01..2024-10-01 `month` rows=28755 seconds=4.211
+- 2024-10-01..2024-11-01 `month` rows=36506 seconds=5.188
+- 2024-11-01..2024-12-01 `month` rows=29921 seconds=4.424
+- 2024-12-01..2025-01-01 `month` rows=26115 seconds=4.15
+- 2025-01-01..2025-02-01 `month` rows=25624 seconds=4.851
+- 2025-02-01..2025-03-01 `month` rows=37608 seconds=5.478
+- 2025-03-01..2025-04-01 `month` rows=48271 seconds=9.407
+- 2025-04-01..2025-05-01 `month` rows=38816 seconds=5.521
+- 2025-05-01..2025-06-01 `month` rows=43335 seconds=8.14
+- 2025-06-01..2025-07-01 `month` rows=51853 seconds=9.008
+- 2025-07-01..2025-08-01 `month` rows=33578 seconds=4.719
+- 2025-08-01..2025-09-01 `month` rows=32606 seconds=4.858
+- 2025-09-01..2025-10-01 `month` rows=45067 seconds=8.688
+- 2025-10-01..2025-11-01 `month` rows=45020 seconds=7.86
+- 2025-11-01..2025-12-01 `month` rows=40921 seconds=5.541
+- 2025-12-01..2026-01-01 `month` rows=39193 seconds=5.367
+- 2026-01-01..2026-02-01 `month` rows=45656 seconds=9.118
+- 2026-02-01..2026-03-01 `month` rows=38861 seconds=6.245
+- 2026-03-01..2026-04-01 `month` rows=46653 seconds=8.372
+- 2026-04-01..2026-05-01 `month` rows=46997 seconds=8.249
+- 2026-05-01..2026-06-01 `month` rows=36956 seconds=5.04
+- 2026-06-01..2026-06-19 `month` rows=13449 seconds=2.387
+
+## Quality signals
+- base rows: 4628424
+- final rows: 3593663
+- build_year source: {'use_date': 3549634, 'raw_buildYear': 44029}
+- reported_at null rows: 2200261
+- trade_type distribution: {'unknown': 1793985, '중개거래': 1619150, '직거래': 180528}
+- cancelled rows: 35556
+- excluded rows: 657
+- warn rows: 163
+- final path: `/Users/gwongwangjae/goorm-ai-language-course/final_project/data/processed/transactions.csv`
+- final size bytes: 819592597
+
+## Next retry point
+`/goal Home Search DB 기반 transactions.csv를 완성한다. 기존 manifest와 failed artifact를 읽고 마지막 성공 chunk부터 이어서 실행하며, quality report의 실패 사유를 해결해 최종 transactions.csv 검증을 통과시킨다.`
+
+## Validation
+- grade: Partial
+- rows: 3593663
