@@ -1,0 +1,2 @@
+policy,basis,status,flag_definition,flagged_rows,flagged_coverage,flagged_error_gt_20pct_rate,overall_error_gt_20pct_rate,lift_vs_overall
+F41_confidence_interval_policy,E11 residual risk tier and interval policy,adopted_risk_policy,resid_risk_tier == high,28738,0.1371951801707182,0.08299116152829007,0.05122500811579812,1.6201297877919725
