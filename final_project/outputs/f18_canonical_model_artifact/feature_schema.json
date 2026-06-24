@@ -1,0 +1,43 @@
+{
+  "model": "canonical_F18_reference_huber_010",
+  "source_experiment": "F18_reference_huber_010",
+  "target": "log(price_per_m2)",
+  "base_log_feature": "log_complex_prev_price_per_m2",
+  "numeric_features": [
+    "area_m2",
+    "floor",
+    "is_basement_floor",
+    "age_years",
+    "log_complex_prev_price_per_m2",
+    "complex_prev_missing",
+    "prev_deal_gap_months",
+    "log_complex_prev2_price_per_m2",
+    "prev2_missing",
+    "prev2_gap_months",
+    "prev1_prev2_log_return",
+    "prev1_prev2_gap_months",
+    "log_exact_prev1_price_per_m2",
+    "exact_prev1_missing",
+    "exact_prev1_gap_months",
+    "log_exact_prev2_price_per_m2",
+    "exact_prev2_missing",
+    "exact_prev2_gap_months",
+    "exact_prev1_prev2_log_return",
+    "exact_prev1_prev2_gap_months",
+    "exact_prev1_area_abs_diff",
+    "exact_prev2_area_abs_diff",
+    "wide_prev1_present_exact_missing"
+  ],
+  "embedding_features": [
+    "legal_dong_code",
+    "sgg_code",
+    "prev_deal_gap_bucket"
+  ],
+  "excluded_final_candidates": [
+    "regional_residual_bias_correction",
+    "prev3_rolling_features",
+    "monthly_market_anchor",
+    "floor_feature_expansion",
+    "news_region_month_price_feature"
+  ]
+}
