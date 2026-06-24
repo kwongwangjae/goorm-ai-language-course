@@ -1,0 +1,84 @@
+{
+  "artifact": "f18_risk_case_ux_copy",
+  "source_policy": "F41_confidence_interval_policy",
+  "price_model": "canonical_F18_reference_huber_010",
+  "api_contract_impact": "none",
+  "affected_ui_units": [
+    "detail_drawer",
+    "mobile_detail_sheet",
+    "selected_complex_summary"
+  ],
+  "do_not_show_on": [
+    "region_marker",
+    "default_complex_marker"
+  ],
+  "risk_states": {
+    "normal": {
+      "condition": "confidence_tier in [high, medium] and resid_risk_tier not in [high, unknown]",
+      "label": "예측 신뢰도 보통",
+      "tone": "neutral",
+      "primary": "최근 비교 이력을 기준으로 예측 범위를 산정했습니다.",
+      "secondary": "실제 거래 조건에 따라 차이가 날 수 있습니다.",
+      "interval": "show p90"
+    },
+    "low_history": {
+      "condition": "confidence_tier == low and resid_risk_tier not in [high, unknown]",
+      "label": "비교 이력 부족",
+      "tone": "caution",
+      "primary": "이 단지는 비교 이력이 적어 예측 범위를 넓게 봐야 합니다.",
+      "secondary": "최근 실거래와 층, 동, 수리 상태를 함께 확인하세요.",
+      "interval": "show p90 and make source visible"
+    },
+    "high_risk": {
+      "condition": "resid_risk_tier == high",
+      "label": "큰 오차 주의",
+      "tone": "warning",
+      "primary": "과거 오차 패턴상 실제 가격과 크게 차이날 가능성이 평균보다 높습니다.",
+      "secondary": "가격은 참고값으로 보고 최근 실거래를 우선 확인하세요.",
+      "interval": "show p95 by default, with p90 available as normal range"
+    },
+    "unknown": {
+      "condition": "resid_risk_tier == unknown or no matching confidence report row before global fallback",
+      "label": "신뢰도 확인 필요",
+      "tone": "caution",
+      "primary": "이 단지의 오차 이력이 부족해 보수적으로 해석해야 합니다.",
+      "secondary": "지역 기준 범위로 대체 표시합니다.",
+      "interval": "show fallback p95"
+    }
+  },
+  "component_copy": {
+    "section_title": "예측 신뢰도",
+    "range_label": "예상 범위",
+    "source_label": "기준",
+    "source_templates": {
+      "complex": "단지 기준",
+      "legal_dong": "동 기준",
+      "sgg": "구 기준",
+      "sido": "시도 기준",
+      "global": "전체 기준"
+    },
+    "range_helper": "범위는 과거 예측 오차의 p90/p95를 현재 예측가에 적용한 값입니다.",
+    "disclaimer": "실거래 신고 지연, 층/동/향, 수리 상태, 특수거래는 별도 확인이 필요합니다."
+  },
+  "layout_rules": {
+    "desktop": [
+      "Place the confidence row directly below the predicted price in the detail drawer.",
+      "Use one compact status chip, one range row, and one short reason line.",
+      "Keep trade history visible without adding a large warning card."
+    ],
+    "mobile": [
+      "Use a single-line summary above the fold in the bottom sheet.",
+      "Put the longer helper text behind an expandable details row."
+    ],
+    "marker": [
+      "Do not add warning labels to default map markers.",
+      "For selected markers only, a subtle warning border is acceptable when high_risk."
+    ]
+  },
+  "accessibility": {
+    "meaning_not_color_only": true,
+    "live_region": "polite when risk state changes after drawer data loads",
+    "minimum_hit_area_px": 40,
+    "recommended_aria_label_template": "예측 신뢰도 {label}, 예상 범위 {low}부터 {high}"
+  }
+}

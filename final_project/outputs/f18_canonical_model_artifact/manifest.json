@@ -1,0 +1,113 @@
+{
+  "artifact_name": "f18_canonical_model_artifact",
+  "frozen_at_utc": "2026-06-24T14:24:37+00:00",
+  "final_model": "canonical_F18_reference_huber_010",
+  "source_experiment": "F18_reference_huber_010",
+  "reference_experiment": "F18_reference_recheck",
+  "status": "locked",
+  "selection_basis": "recent_holdout log_mae primary; p95, p99, >10%, >20% retained as guardrails/evidence",
+  "training_config": {
+    "run_mode": "full",
+    "max_epochs": 30,
+    "batch_size": 8192,
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "loss": "Huber(delta=0.10)",
+    "dense_units": [
+      128,
+      64
+    ],
+    "dropout": {
+      "unit>=128": 0.1,
+      "else": 0.05
+    },
+    "kernel_regularizer": "l2(1e-5)",
+    "seed": 225,
+    "split": "train<=2023, valid=2024, test=2025, recent_holdout>=2026",
+    "policy": "Policy B: is_cancelled == 0, trade_type in [중개거래, unknown]"
+  },
+  "copied_evidence_files": [
+    {
+      "source_path": "/Users/gwongwangjae/goorm-ai-language-course/final_project/outputs/e10_outlier_signal_metrics.csv",
+      "artifact_path": "outputs/f18_canonical_model_artifact/evidence/e10_outlier_signal_metrics.csv",
+      "bytes": 8788,
+      "sha256": "48ffad836956f75427571ad1be34e90a600bf18431f909e6380d400d710c1ca3"
+    },
+    {
+      "source_path": "/Users/gwongwangjae/goorm-ai-language-course/final_project/outputs/e10_outlier_signal_group_metrics.csv",
+      "artifact_path": "outputs/f18_canonical_model_artifact/evidence/e10_outlier_signal_group_metrics.csv",
+      "bytes": 30232,
+      "sha256": "9fb00d234b510836c319e3ce847cff46b10b99992f28140e3ecb7f45ed69d6b0"
+    },
+    {
+      "source_path": "/Users/gwongwangjae/goorm-ai-language-course/final_project/outputs/e10_outlier_signal_summary.md",
+      "artifact_path": "outputs/f18_canonical_model_artifact/evidence/e10_outlier_signal_summary.md",
+      "bytes": 5651,
+      "sha256": "1422bbc964f26e9eb6d06c0d57162f789b847450c72ffc31a7bf665c7a0f9b1b"
+    },
+    {
+      "source_path": "/Users/gwongwangjae/goorm-ai-language-course/final_project/outputs/e10_outlier_signal_final_decision.md",
+      "artifact_path": "outputs/f18_canonical_model_artifact/evidence/e10_outlier_signal_final_decision.md",
+      "bytes": 2334,
+      "sha256": "daa37c33fa142afb4671779d7d6f4c7e830d9a1f111401c21c1644da215ab67e"
+    },
+    {
+      "source_path": "/Users/gwongwangjae/goorm-ai-language-course/final_project/outputs/e10_outlier_signal_feature_quality_report.md",
+      "artifact_path": "outputs/f18_canonical_model_artifact/evidence/e10_outlier_signal_feature_quality_report.md",
+      "bytes": 1089,
+      "sha256": "e778e1f63d1447ab3359cb0115e5cdc53d36061e7fec3b33eb39ab070b541d44"
+    }
+  ],
+  "hash_only_source_files": [
+    {
+      "source_path": "/Users/gwongwangjae/goorm-ai-language-course/final_project/outputs/e10_outlier_signal_features.csv",
+      "artifact_path": null,
+      "bytes": 1275821436,
+      "sha256": "5c1ae112fc686aa504a0f78fc9ec442b6bca63005dbdabf6670c9ecf7ccd30d6"
+    },
+    {
+      "source_path": "/Users/gwongwangjae/goorm-ai-language-course/final_project/scripts/run_e10_outlier_signal_experiments.py",
+      "artifact_path": null,
+      "bytes": 23921,
+      "sha256": "3620caa2eb222a94a6c8e50a6609a24ca9a98c52cf8c0b20195265401b0ebfde"
+    },
+    {
+      "source_path": "/Users/gwongwangjae/goorm-ai-language-course/final_project/scripts/run_e09_exact_prev_experiments.py",
+      "artifact_path": null,
+      "bytes": 30162,
+      "sha256": "1b6c581482e8c9117e1db0a92dd7387417828fb6ac6912c5cb517b083faba927"
+    },
+    {
+      "source_path": "/Users/gwongwangjae/goorm-ai-language-course/final_project/scripts/build_e10_outlier_signal_features.py",
+      "artifact_path": null,
+      "bytes": 15151,
+      "sha256": "f1ebc707b6f6974590ae07b32208aab4f00d68efe85cf7a0ccf6ef2fc0cf11b8"
+    },
+    {
+      "source_path": "/Users/gwongwangjae/goorm-ai-language-course/final_project/scripts/build_e09_exact_prev_features.py",
+      "artifact_path": null,
+      "bytes": 16237,
+      "sha256": "f9ee35810c5a8086c21879099840002284b9c7a71a2fff01a66115b3360baaa5"
+    }
+  ],
+  "generated_artifact_files": [
+    {
+      "source_path": "/Users/gwongwangjae/goorm-ai-language-course/final_project/outputs/f18_canonical_model_artifact/final_metrics.csv",
+      "artifact_path": "outputs/f18_canonical_model_artifact/final_metrics.csv",
+      "bytes": 958,
+      "sha256": "0682a17e452f01a7fa0de66a0d3a9bfbcda458b1d5d4e7ebd8ef2aaeb0fc7cfd"
+    },
+    {
+      "source_path": "/Users/gwongwangjae/goorm-ai-language-course/final_project/outputs/f18_canonical_model_artifact/feature_schema.json",
+      "artifact_path": "outputs/f18_canonical_model_artifact/feature_schema.json",
+      "bytes": 1191,
+      "sha256": "634978fc288af56ab2b12da248b23249d6d4e7a141fba816d77d591a94a89aee"
+    },
+    {
+      "source_path": "/Users/gwongwangjae/goorm-ai-language-course/final_project/outputs/f18_canonical_model_artifact/MODEL_CARD.md",
+      "artifact_path": "outputs/f18_canonical_model_artifact/MODEL_CARD.md",
+      "bytes": 1473,
+      "sha256": "1423317cff8a80d22a1e5d68192669f48d9045a33046fc993207f1244711e1f6"
+    }
+  ]
+}

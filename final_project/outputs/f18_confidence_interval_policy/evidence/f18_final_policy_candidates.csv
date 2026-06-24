@@ -1,0 +1,5 @@
+order,candidate,kind,status,basis,rows,log_mae,p95,p99,gt10,gt20,lift_or_delta,reason
+1,F40_sparse_fallback_policy,price_policy,discarded,row-level E11 F18/F29 predictions,209468,0.06777956742849743,0.20132628164968636,0.36279705294973835,0.20282811694387687,0.05076670422212462,-0.0004255870886820251,"sparse rows=7467; same-run d_MAE=-0.000426, d_p99=-0.002099, d_gt20=-0.000458; beats_same_run=True, beats_canonical=False"
+2,F41_confidence_interval_policy,risk_policy,candidate,E11 residual risk tier and interval policy,28738,,,,,0.08299116152829007,1.6201297877919725,high-risk coverage=0.1372; high-risk >20%=0.0830; overall >20%=0.0512; lift=1.62
+3,F42_monthly_anchor_gated,price_policy,discarded,monthly anchor group metrics,,,,,,,,"long-gap groups with MAE gain=5/5, p99 worse=4/5; full monthly did not beat canonical"
+4,F43_reconstruction_news_risk_only,risk_policy,discarded,news/reconstruction risk flag lift,0,,,,,0.0,0.0,threshold=0.8783; flagged coverage=0.0000; flagged >20%=0.0000; overall >20%=0.0512; lift=0.00

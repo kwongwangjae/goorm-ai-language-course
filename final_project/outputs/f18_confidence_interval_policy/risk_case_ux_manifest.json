@@ -1,0 +1,19 @@
+{
+  "artifact_name": "f18_risk_case_ux_copy",
+  "frozen_at_utc": "2026-06-24T14:24:53+00:00",
+  "source_policy": "/Users/gwongwangjae/goorm-ai-language-course/final_project/outputs/f18_confidence_interval_policy/confidence_policy.json",
+  "source_policy_sha256": "edefd784f66c1c7394bef2ac24c3e59469974618177f763e4db1957ed5538bef",
+  "generated_files": [
+    {
+      "path": "/Users/gwongwangjae/goorm-ai-language-course/final_project/outputs/f18_confidence_interval_policy/RISK_CASE_UX_COPY.md",
+      "bytes": 5013,
+      "sha256": "ff90aed0c3c101fc62fd0c5fafa7febe3eb1450d58a4f4da8a006e7a00f30d91"
+    },
+    {
+      "path": "/Users/gwongwangjae/goorm-ai-language-course/final_project/outputs/f18_confidence_interval_policy/risk_case_copy.json",
+      "bytes": 3504,
+      "sha256": "bb759da196d48ecce848cb83e4cfc9c8281fa1f476e5047e1a7450096f004eea"
+    }
+  ],
+  "api_contract_impact": "none"
+}

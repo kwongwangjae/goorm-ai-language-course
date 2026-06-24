@@ -1,0 +1,85 @@
+{
+  "artifact_name": "f18_confidence_interval_policy",
+  "frozen_at_utc": "2026-06-24T14:24:40+00:00",
+  "policy": "F41_confidence_interval_policy",
+  "status": "adopted_as_risk_policy",
+  "price_model": "canonical_F18_reference_huber_010",
+  "copied_evidence_files": [
+    {
+      "source_path": "/Users/gwongwangjae/goorm-ai-language-course/final_project/outputs/e11_prediction_interval_policy.md",
+      "artifact_path": "outputs/f18_confidence_interval_policy/evidence/e11_prediction_interval_policy.md",
+      "bytes": 1319,
+      "sha256": "c97bb9b04ee9c7dc6d555d268e70e34c319585db5b7d493330f0940eafb6d4de"
+    },
+    {
+      "source_path": "/Users/gwongwangjae/goorm-ai-language-course/final_project/outputs/f18_final_policy_sweep/f18_final_policy_candidates.csv",
+      "artifact_path": "outputs/f18_confidence_interval_policy/evidence/f18_final_policy_candidates.csv",
+      "bytes": 1035,
+      "sha256": "21942e209a18a7db86f4135695c78aae9cce4f695b403265e845459c92e106cb"
+    },
+    {
+      "source_path": "/Users/gwongwangjae/goorm-ai-language-course/final_project/outputs/f18_final_policy_sweep/f18_final_policy_sweep_summary.md",
+      "artifact_path": "outputs/f18_confidence_interval_policy/evidence/f18_final_policy_sweep_summary.md",
+      "bytes": 1443,
+      "sha256": "78232d56182a1304b532047231849c9a21435f423d645c47cccffed9891abe3d"
+    },
+    {
+      "source_path": "/Users/gwongwangjae/goorm-ai-language-course/final_project/outputs/f18_final_policy_sweep/f18_final_policy_sweep_final_decision.md",
+      "artifact_path": "outputs/f18_confidence_interval_policy/evidence/f18_final_policy_sweep_final_decision.md",
+      "bytes": 301,
+      "sha256": "cf30926249a7d47585d13e85441fa5dfb981691b3b85634f9a05e1046f9f7559"
+    }
+  ],
+  "hash_only_source_files": [
+    {
+      "source_path": "/Users/gwongwangjae/goorm-ai-language-course/final_project/outputs/e11_region_confidence_report.csv",
+      "artifact_path": null,
+      "bytes": 8499831,
+      "sha256": "5d779ece0ddedafcae994699b1cc11feaf6476441ff354bcf9a8f72b1b1b2e43"
+    },
+    {
+      "source_path": "/Users/gwongwangjae/goorm-ai-language-course/final_project/outputs/e11_f18_eval_predictions.csv",
+      "artifact_path": null,
+      "bytes": 305491306,
+      "sha256": "5a3a84af068ad0df90e14cbce71bdcb6d502dbf73189e2d18a95d46b6b7b3c51"
+    },
+    {
+      "source_path": "/Users/gwongwangjae/goorm-ai-language-course/final_project/scripts/build_e11_region_residual_features.py",
+      "artifact_path": null,
+      "bytes": 33846,
+      "sha256": "818667d12d7b856ad47b98505d526f475748ec09f2adf7c95c29b2e94edf2004"
+    },
+    {
+      "source_path": "/Users/gwongwangjae/goorm-ai-language-course/final_project/scripts/run_e11_region_residual_experiments.py",
+      "artifact_path": null,
+      "bytes": 32858,
+      "sha256": "19f3fb7509e93681a04ccef7de90182c09f62eb074021bc0b2c64337cbd155cf"
+    },
+    {
+      "source_path": "/Users/gwongwangjae/goorm-ai-language-course/final_project/scripts/run_f18_final_policy_sweep.py",
+      "artifact_path": null,
+      "bytes": 13814,
+      "sha256": "4be6f9531327289ebf03131f2ad483550cef18c0dc114192fd8cb435e988541b"
+    }
+  ],
+  "generated_artifact_files": [
+    {
+      "source_path": "/Users/gwongwangjae/goorm-ai-language-course/final_project/outputs/f18_confidence_interval_policy/risk_policy_metrics.csv",
+      "artifact_path": "outputs/f18_confidence_interval_policy/risk_policy_metrics.csv",
+      "bytes": 342,
+      "sha256": "a311ec32621bbb18f382c4aba538a5b5b9c7905729711a24a60c9ea5a2014704"
+    },
+    {
+      "source_path": "/Users/gwongwangjae/goorm-ai-language-course/final_project/outputs/f18_confidence_interval_policy/confidence_policy.json",
+      "artifact_path": "outputs/f18_confidence_interval_policy/confidence_policy.json",
+      "bytes": 3780,
+      "sha256": "edefd784f66c1c7394bef2ac24c3e59469974618177f763e4db1957ed5538bef"
+    },
+    {
+      "source_path": "/Users/gwongwangjae/goorm-ai-language-course/final_project/outputs/f18_confidence_interval_policy/POLICY_CARD.md",
+      "artifact_path": "outputs/f18_confidence_interval_policy/POLICY_CARD.md",
+      "bytes": 2338,
+      "sha256": "d7da186bac63b44b748bf8acf71a2df0a58e9cb543afc025d643c15a22ec2036"
+    }
+  ]
+}

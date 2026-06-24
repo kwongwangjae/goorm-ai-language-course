@@ -1,0 +1,138 @@
+{
+  "policy_name": "F41_confidence_interval_policy",
+  "status": "adopted_as_risk_policy",
+  "price_model": "canonical_F18_reference_huber_010",
+  "price_prediction_changes": false,
+  "purpose": "Expose confidence tier and expected percent error interval without changing the price prediction.",
+  "lookup_report": {
+    "path": "/Users/gwongwangjae/goorm-ai-language-course/final_project/outputs/e11_region_confidence_report.csv",
+    "source_until_ym": "2025-12",
+    "fallback_order": [
+      "complex",
+      "legal_dong",
+      "sgg",
+      "sido",
+      "global"
+    ],
+    "required_lookup_keys": {
+      "complex": "complex_id",
+      "legal_dong": "legal_dong_code",
+      "sgg": "sgg_code",
+      "sido": "sido_code",
+      "global": "global"
+    }
+  },
+  "interval_rule": {
+    "default_interval_pct": "p90_abs_pct_error",
+    "conservative_interval_pct": "p95_abs_pct_error",
+    "price_low": "predicted_price * max(0, 1 - interval_pct)",
+    "price_high": "predicted_price * (1 + interval_pct)"
+  },
+  "confidence_tier_rule": {
+    "high": "rows >= 300 and p90_abs_pct_error <= 0.20",
+    "medium": "rows >= 50 and p90_abs_pct_error <= 0.30",
+    "low": "rows > 0",
+    "no_history": "no residual history; use global fallback"
+  },
+  "risk_warning_rule": {
+    "warn": "confidence_tier == low or resid_risk_tier in [high, unknown]",
+    "primary_evaluated_flag": "resid_risk_tier == high"
+  },
+  "evaluation": {
+    "recent_holdout_rows": 209468,
+    "overall_error_gt_20pct_rate": 0.05122500811579812,
+    "tier_rows": [
+      {
+        "resid_risk_tier": "high",
+        "rows": 28738,
+        "coverage": 0.1371951801707182,
+        "error_gt_20pct_rate": 0.08299116152829007,
+        "lift_vs_overall": 1.6201297877919725
+      },
+      {
+        "resid_risk_tier": "medium",
+        "rows": 180730,
+        "coverage": 0.8628048198292818,
+        "error_gt_20pct_rate": 0.04617385049521385,
+        "lift_vs_overall": 0.9013927414288402
+      }
+    ],
+    "high_risk": {
+      "resid_risk_tier": "high",
+      "rows": 28738,
+      "coverage": 0.1371951801707182,
+      "error_gt_20pct_rate": 0.08299116152829007,
+      "lift_vs_overall": 1.6201297877919725
+    }
+  },
+  "confidence_report_summary": {
+    "rows": 43113,
+    "level_counts": {
+      "complex": 39361,
+      "global": 1,
+      "legal_dong": 3486,
+      "sgg": 249,
+      "sido": 16
+    },
+    "tier_counts": {
+      "high": 2062,
+      "medium": 11723,
+      "low": 29328
+    },
+    "level_tier_counts": {
+      "complex": {
+        "high": 686,
+        "medium": 10509,
+        "low": 28166
+      },
+      "global": {
+        "high": 1
+      },
+      "legal_dong": {
+        "high": 1192,
+        "medium": 1138,
+        "low": 1156
+      },
+      "sgg": {
+        "high": 168,
+        "medium": 75,
+        "low": 6
+      },
+      "sido": {
+        "high": 15,
+        "medium": 1
+      }
+    },
+    "global": {
+      "source_until_ym": "2025-12",
+      "rows": 1893038,
+      "p80_abs_pct_error": 0.11219904998606446,
+      "p90_abs_pct_error": 0.16359709082785998,
+      "p95_abs_pct_error": 0.221796476037947,
+      "confidence_tier": "high"
+    },
+    "tier_summary": [
+      {
+        "confidence_tier": "high",
+        "groups": 2062,
+        "median_p80": 0.10114192328698868,
+        "median_p90": 0.1422779893099547,
+        "median_p95": 0.18617282945600208
+      },
+      {
+        "confidence_tier": "low",
+        "groups": 29328,
+        "median_p80": 0.16716228828053342,
+        "median_p90": 0.2084030130280301,
+        "median_p95": 0.2399384033522044
+      },
+      {
+        "confidence_tier": "medium",
+        "groups": 11723,
+        "median_p80": 0.10438443101990125,
+        "median_p90": 0.1429451885886695,
+        "median_p95": 0.18303763898630515
+      }
+    ]
+  }
+}
